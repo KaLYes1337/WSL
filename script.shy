@@ -1,7 +1,0 @@
-#!/bin/bash
-
-echo "Harrow!"
-
-sleep 3
-
-echo "Test msg"
