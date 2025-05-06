@@ -5,3 +5,4 @@ echo "Harrow"
 sleep 3
 
 echo "Test msg"
+echo "Test test test"
