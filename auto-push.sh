@@ -14,6 +14,12 @@ cd /home/kalyes/github
 git add .
 read -p  "Commit message: " comm_msg
 
+#Checking if there is any changes
+if git diff --cached --quiet; then
+  echo "Nothing staged to commit."
+  exit 0
+fi
+
 git commit -m "$comm_msg"
 read -p "Do you want to continue and push the commit? (y/n):" choice
 if [[ "$choice" == "y" ]];then
